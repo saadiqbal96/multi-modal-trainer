@@ -220,4 +220,4 @@ This project demonstrates:
 🧑‍💻 Author
 ------------
 
-**Saad Iqbal**GitHub: [https://github.com/saadiqbal96](https://github.com/saadiqbal96)
+Saad Iqbal GitHub: [https://github.com/saadiqbal96](https://github.com/saadiqbal96)
