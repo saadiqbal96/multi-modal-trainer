@@ -169,25 +169,37 @@ The project includes a comprehensive test suite validating:
 
 > **Note:**An integration test that makes a live Gemini API call may fail locally due to shared API budget limits in the Udacity environment. This is a known infrastructure limitation and does not affect grading.
 
-🔐 Environment Configuration
-----------------------------
+## 🔐 Environment Configuration
 
-Sensitive credentials are **not committed**.
+Sensitive credentials are not committed to the repository.
 
-A sample configuration is provided in env.example:
+A sample configuration is provided in `env.example`:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   USER_API_KEY=my-api-key  GEMINI_API_KEY=voc-...  GOOGLE_GEMINI_BASE_URL=https://gemini.vocareum.com  DEFAULT_GOOGLE_MODEL=gemini-2.5-flash-lite  EVAL_JUDGE_MODEL=gemini-2.5-flash-lite  EVAL_NUM_REPEATS=5   `
+```env
+USER_API_KEY=my-api-key
+GEMINI_API_KEY=voc-...
+GOOGLE_GEMINI_BASE_URL=https://gemini.vocareum.com
+DEFAULT_GOOGLE_MODEL=gemini-2.5-flash-lite
+EVAL_JUDGE_MODEL=gemini-2.5-flash-lite
+EVAL_NUM_REPEATS=5
 
-Users should copy this to .env for local execution.
+Users should copy this file to .env for local execution and insert their own credentials if required.
 
-▶️ Running the Application (Optional)
--------------------------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uv run --env-file .env python multimodal_moderation/gradio_app.py   `
+---
 
-Then open:
+## ▶️ Running the Application (Optional)
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   http://localhost:7860   `
+```markdown
+To run the Gradio application locally:
+
+```bash
+uv run --env-file .env python multimodal_moderation/gradio_app.py
+
+Then open the browser at:
+
+http://localhost:7860
+
 
 📌 Key Takeaways
 ----------------
